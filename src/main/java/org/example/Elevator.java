@@ -15,6 +15,10 @@ public abstract class Elevator implements Free, Call {
         System.out.println("You called " + option.getValue() + " elevator №" + number.value + " !");
     }
 
+    public void setStatus(Status status) {
+        this.status = status;
+    }
+
     public Options getOption() {
         return option;
     }
